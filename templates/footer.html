@@ -1,0 +1,36 @@
+<!-- Footer using bootsrap-->
+{% load i18n %}
+
+<footer class="footer-section py-5 border-top">
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- Address Section -->
+            <div class="col-md-3 mb-4 text-center">
+                <h5 class="text-uppercase">{% trans "Adresa Sediu" %}</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-map-marker-alt"></i> {% trans "Brasov, Str.Apicultorilor nr.17" %}</li>
+                    <li><i class="fas fa-phone-alt"></i>{% trans "+40727318590" %}</li>
+                    <li><i class="fas fa-envelope"></i>{% trans "marianopinca@gmail.com" %}</li>
+                </ul>
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="col-md-3 mb-4 text-center">
+                <h5 class="text-uppercase">{% trans "Linkuri rapide" %}</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">{% trans "Despre noi" %}</a></li>
+                    <li><a href="#">{% trans "Contact" %}</a></li>
+                    <li><a href="#">{% trans "Termeni & Condiții" %}</a></li>
+                    <li><a href="#">{% trans "Suport" %}</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col text-center">
+                <p> {% trans "&copy; 2024 Octavian Logistic.Toate drepturile rezervate." %}
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+

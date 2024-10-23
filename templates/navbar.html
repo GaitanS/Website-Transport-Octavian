@@ -1,0 +1,49 @@
+{% load static %}
+{% load i18n %}
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" data-aos="fade-in">
+    <div class="container d-flex justify-content-center align-items-center">
+        <!-- Logo centered -->
+        <a class="navbar-brand mx-auto" href="#">
+            <img src="{% static 'images/logo2.png' %}" alt="Logo" class="logo" width="15%">
+            OCTAVIAN LOGISTIC
+        </a>
+
+        <!-- Toggler for mobile view -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links and Language Toggle Buttons -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- Nav items centered on mobile -->
+            <ul class="navbar-nav mx-auto text-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">{% trans "Acasa" %}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">{% trans "Informatii" %}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">{% trans "Transport" %}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">{% trans "Clienti" %}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">{% trans "Contact" %}</a>
+                </li>
+            </ul>
+
+            <!-- Language Toggle Buttons centered on mobile -->
+            <div class="btn-group mx-auto" role="group">
+                <a href="/ro/" class="btn btn-outline-light {% if LANGUAGE_CODE == 'ro' %}active{% endif %}">
+                    RO
+                </a>
+                <a href="/en/" class="btn btn-outline-light {% if LANGUAGE_CODE == 'en' %}active{% endif %}">
+                    EN
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>

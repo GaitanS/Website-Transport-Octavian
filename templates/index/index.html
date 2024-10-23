@@ -1,0 +1,158 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+{% block title %}Home - Octavian Logistic{% endblock %}
+
+{% block content %}
+    <section class="hero-section position-relative text-center d-flex align-items-center justify-content-center">
+        <!-- Static image in the background -->
+        <div class="split-image">
+            <img src="{% static 'images/bg1.jpg' %}" class="d-block w-100" alt="Split Image">
+        </div>
+
+        <!-- Hero text content overlaid on top of the image -->
+        <div class="hero-text position-absolute top-50 start-50 translate-middle" data-aos="fade-in"
+             data-aos-duration="1500">
+            <h1 class="display-4 fw-bold text-white ">Octavian Logistic</h1>
+            <p class="lead text-white">Bridging Distances. Delivering Success.</p>
+            <h2 class="fw-bold text-white">{% trans "Bun venit la compania noastră de transport" %}</h2>
+            <p class="text-white">{% trans "Servicii de transport eficiente și de încredere pentru toate nevoile dvs. de transport." %}</p>
+            <p class="text-white">{% trans "Contactați-ne astăzi pentru o ofertă sau pentru a afla mai multe despre serviciile noastre." %}</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="tel:+40727318590" class="btn btn-danger btn-lg">{% trans "Sunați-ne" %}</a>
+                <a href="#contact" class="btn btn-outline-light btn-lg">{% trans "Trimiteți-ne un email" %}</a>
+                <a href="https://wa.me/40727318590" class="btn btn-outline-light btn-lg"
+                   target="_blank">{% trans "WhatsApp" %}</a>
+            </div>
+        </div>
+    </section>
+    <section class="technology-section py-5 border-top ">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <!-- Text Section with Slanted Background -->
+                <div class="col-md-6 text-section" data-aos="slide-right" data-aos-duration="1500">
+                    <h2>{% trans "Octavian Logistic SRL" %}</h2>
+                    <p>{% trans "Octavian Logistic SRL este o companie de logistică și transport fondată în 2020, cu sediul în Brașov, România. Compania este înregistrată cu codul unic de identificare 43113348 și se specializează în servicii de transport și logistică, deservind clienți din diverse industrii." %}</p>
+                    <p>{% trans "Compania noastră oferă soluții logistice flexibile și de încredere, cu un accent pe optimizarea lanțului de aprovizionare al partenerilor noștri." %}</p>
+                </div>
+                <!-- Image Section with Slanted Effect -->
+                <div class="col-md-6 image-section " data-aos="slide-left" data-aos-duration="1500">
+                    <img src="{% static 'images/logo2.png' %}" alt="Truck" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="stats-section py-5 border-top">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <h2 class="stat-number" data-aos="fade-up" data-target="5">0</h2>
+                    <p>{% trans "Ani de experiență" %}</p>
+                </div>
+                <div class="col-md-3">
+                    <h2 class="stat-number" data-aos="fade-up" data-target="18500">0</h2>
+                    <p>{% trans "Kilometri parcurși" %}</p>
+                </div>
+                <div class="col-md-3">
+                    <h2 class="stat-number" data-aos="fade-up" data-target="23">0</h2>
+                    <p>{% trans "Clienti" %}</p>
+                </div>
+                <div class="col-md-3">
+                    <h2 class="stat-number" data-aos="fade-up" data-target="30">0</h2>
+                    <p>{% trans "Contracte" %}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="products-section py-5 border-top products-section3" data-aos="fade-in" data-aos-duration="1500">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <!-- Image Section -->
+                <div class="col-md-6" data-aos="slide-right" data-aos-duration="1500">
+                    <img src="{% static 'images/section3_1.png' %}" class="img-fluid rounded " alt="Truck" width="70%">
+                </div>
+                <!-- Text Section with Diagonal Cut -->
+                <div class="col-md-6 text-section" data-aos="slide-left" data-aos-duration="1500">
+                    <h2 class="fw-bold">{% trans "Soluții rapide de transport și logistică" %}</h2>
+                    <p>{% trans "Oferim servicii rapide și eficiente de transport și logistică, adaptate nevoilor clienților dindiverse industrii. Ne concentrăm pe optimizarea lanțului de aprovizionare și pe livrări sigureși punctuale, asigurând soluții personalizate pentru fiecare proiect. Cu o echipă dedicată șiresurse moderne, suntem partenerul de încredere pentru toate cerințele logistice." %}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="technology-section py-5">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <!-- Text Section with Slanted Background -->
+                <div class="col-md-6 text-section" data-aos="slide-up" data-aos-duration="1500">
+                    <h2>{% trans "Facilități de parcare" %}</h2>
+                    <p>{% trans "Octavian Logistic SRL nu doar că oferă servicii rapide și eficiente de transport și logistică, dar pune la dispoziție și facilități de parcare pentru camioane și tiruri." %}</p>
+                    <p>{% trans "Astfel, clienții noștri beneficiază de soluții complete care includ atât transportul în condiții optime, cât și un spațiu sigur și accesibil pentru staționarea vehiculelor de mare tonaj." %}</p>
+                    <h2>Social</h2>
+                    <a href="https://www.facebook.com/profile.php?id=61552734240538">
+                        <img src="{% static 'images/facebook.png' %}" alt="facebook" class="img-fluid">
+                    </a>
+                    <h2>{% trans "Locatie Live" %}</h2>
+                    <p>{% trans "Faceți clic pe acul roșu pentru a afla cum să ajungeți la parcare." %}</p>
+                    <!-- Google Map Embed (Positioned under the text) -->
+                    <div class="mt-4">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2786.9114751389307!2d25.584803912289463!3d45.692748518039444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b3591da7c4b255%3A0xe34cbec34b54a415!2sOctavian%20Logistic%20SRL!5e0!3m2!1sro!2sro!4v1729525845891!5m2!1sro!2sro"
+                                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <!-- Image Section with Slanted Effect -->
+                <div class="col-md-6 image-section" data-aos="slide-left" data-aos-duration="1500">
+                    <img src="{% static 'images/parcare.png' %}" alt="Truck" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-2" data-aos="slide-up">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <!-- Skewed Image 1 (Left Skew) -->
+                <div class="col-12 ">
+                    <div class="">
+                        <img src="{% static 'images/parcare_landscape.PNG' %}" class="img-fluid rounded-2"
+                             alt="Image 1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fleet-section py-5 border-top">
+        <div class="container">
+            <h2 class="text-center mb-4 flota" data-aos="slide-up">{% trans "FLOTA" %}</h2>
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-md-4 mb-4" data-aos="slide-up" data-aos-duration="1500">
+                    <div class="card custom-card">
+                        <img src="{% static 'images/van1.jpg' %}" class="card-img-top" alt="Van">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">{% trans "Van" %}</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card custom-card" data-aos="slide-up" data-aos-duration="1500" data-aos-delay="350">
+                        <img src="{% static 'images/tir1.jpg' %}" class="card-img-top" alt="Tir" height="555px">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">{% trans "Tir" %}</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card custom-card" data-aos="slide-up" data-aos-duration="1500" data-aos-delay="700">
+                        <img src="{% static 'images/tir2.jpg' %}" class="card-img-top" alt="Tir">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">{% trans "Tir" %}</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

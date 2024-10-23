@@ -1,0 +1,104 @@
+{% load i18n %}
+{% load static %}
+<section id="contact" class="consultation-section py-5 border-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" data-aos="slide-right" data-aos-duration="500">
+                <img src="{% static 'images/parcare_2.PNG' %}" class="img-fluid rounded-5 shadow" alt="Lucrător">
+            </div>
+            <div class="col-md-6" data-aos="slide-left" data-aos-duration="2500">
+                <div class="form-container p-4 custom-card rounded-1">
+                    <h2>Contact</h2>
+                    <form id="contact-form" method="POST" action="{% url 'send_email' %}">
+                        {% csrf_token %}
+
+                        <!-- Selectează servicii -->
+                        <div class="form-group">
+                            <label for="services">{% trans "Selectați serviciul" %}</label>
+                            <select name="services" id="services" class="form-control" required>
+                                <option value="" selected disabled>{% trans "- Selectați un serviciu -" %}</option>
+                                <option value="Logistica">{% trans "Parcare" %}</option>
+                                <option value="Transport">{% trans "Transport" %}</option>
+                            </select>
+                        </div>
+
+                        <!-- Nume și tipul vehiculului -->
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="name">{% trans "Numele dvs." %}</label>
+                                <input type="text" class="form-control" name="name" id="name"
+                                       placeholder="{% trans "Numele dvs." %}"
+                                       required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="vehicle">{% trans "Tip Vehicul" %}</label>
+                                <select name="vehicle" id="vehicle" class="form-control"
+                                        required>
+                                    <option value="" selected disabled>{% trans "- Selectați un vehicul -" %}</option>
+                                    <option value="Tir">{% trans "Tir" %}</option>
+                                    <option value="Duba">{% trans "Duba" %}</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="form-group">
+                            <label for="email">{% trans "Email-ul dvs." %}</label>
+                            <input type="email" class="form-control" name="email" id="email"
+                                   placeholder="{% trans "Email-ul dvs." %}"
+                                   required>
+                        </div>
+
+                        <!-- Dată și oră în format pentru România -->
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="date">{% trans "Dată" %}</label>
+                                <input type="text" class="form-control" name="date" id="date"
+                                       placeholder="{% trans "zz.ll.aaaa" %}"
+                                       required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="time">{% trans "Ora" %}</label>
+                                <input type="text" class="form-control" name="time" id="time" placeholder="HH:MM"
+                                       required>
+                            </div>
+                        </div>
+
+                        <!-- Mesaj -->
+                        <div class="form-group">
+                            <label for="message">{% trans "Mesaj" %}</label>
+                            <textarea class="form-control" name="message" id="message" rows="4"
+                                      placeholder="{% trans "Mesajul dvs." %}" required></textarea>
+                        </div>
+                        <!-- Buton de trimitere -->
+                        <div class="p-2 align-center">
+                            <button type="submit" class="btn btn-dark btn-block">{% trans "Trimite mesaj" %}</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    document.getElementById('date').addEventListener('input', function (e) {
+        const datePattern = /^(0[1-9]|[12][0-9]|3[01])\.(0[1-9]|1[012])\.(\d{4})$/; // zz.ll.aaaa
+        const input = e.target.value;
+        if (!datePattern.test(input)) {
+            e.target.setCustomValidity('{% trans "Formatul datei trebuie să fie în format zz.ll.aaaa" %}');
+        } else {
+            e.target.setCustomValidity('');
+        }
+    });
+
+    document.getElementById('time').addEventListener('input', function (e) {
+        const timePattern = /^([01]\d|2[0-3]):([0-5]\d)$/; // HH:MM
+        const input = e.target.value;
+        if (!timePattern.test(input)) {
+            e.target.setCustomValidity('{% trans "Formatul orei trebuie să fie în format HH:MM" %}');
+        } else {
+            e.target.setCustomValidity('');
+        }
+    });
+</script>
+

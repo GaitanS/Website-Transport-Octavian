@@ -1,0 +1,287 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-22 20:54+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
+"2:1));\n"
+
+#: .\OctavianLogistic1\settings.py:18
+msgid "English"
+msgstr "English"
+
+#: .\OctavianLogistic1\settings.py:19
+msgid "Romanian"
+msgstr "Romanian"
+
+#: .\templates\consultation_form.html:17
+msgid "Selectați serviciul"
+msgstr "Selectați serviciul"
+
+#: .\templates\consultation_form.html:19
+msgid "- Selectați un serviciu -"
+msgstr "- Selectați un serviciu -"
+
+#: .\templates\consultation_form.html:20
+msgid "Parcare"
+msgstr "Parcare"
+
+#: .\templates\consultation_form.html:21 .\templates\navbar.html:24
+msgid "Transport"
+msgstr "Transport"
+
+#: .\templates\consultation_form.html:28 .\templates\consultation_form.html:30
+msgid "Numele dvs."
+msgstr "Numele dvs."
+
+#: .\templates\consultation_form.html:34
+msgid "Tip Vehicul"
+msgstr "Tip Vehicul"
+
+#: .\templates\consultation_form.html:37
+msgid "- Selectați un vehicul -"
+msgstr "- Selectați un vehicul -"
+
+#: .\templates\consultation_form.html:38 .\templates\index\index.html:141
+#: .\templates\index\index.html:150
+msgid "Tir"
+msgstr "Tir"
+
+#: .\templates\consultation_form.html:39
+msgid "Duba"
+msgstr "Duba"
+
+#: .\templates\consultation_form.html:46 .\templates\consultation_form.html:48
+msgid "Email-ul dvs."
+msgstr "Email-ul dvs."
+
+#: .\templates\consultation_form.html:55
+msgid "Dată"
+msgstr "Dată"
+
+#: .\templates\consultation_form.html:57
+msgid "zz.ll.aaaa"
+msgstr "zz.ll.aaaa"
+
+#: .\templates\consultation_form.html:61
+msgid "Ora"
+msgstr "Ora"
+
+#: .\templates\consultation_form.html:69
+msgid "Mesaj"
+msgstr "Mesaj"
+
+#: .\templates\consultation_form.html:71
+msgid "Mesajul dvs."
+msgstr "Mesajul dvs."
+
+#: .\templates\consultation_form.html:75
+msgid "Trimite mesaj"
+msgstr "Trimite mesaj"
+
+#: .\templates\consultation_form.html:88
+msgid "Formatul datei trebuie să fie în format zz.ll.aaaa"
+msgstr "Formatul datei trebuie să fie în format zz.ll.aaaa"
+
+#: .\templates\consultation_form.html:98
+msgid "Formatul orei trebuie să fie în format HH:MM"
+msgstr "Formatul orei trebuie să fie în format HH:MM"
+
+#: .\templates\footer.html:9
+msgid "Adresa Sediu"
+msgstr "Adresa Sediu"
+
+#: .\templates\footer.html:11
+msgid "Brasov, Str.Apicultorilor nr.17"
+msgstr "Brasov, Str.Apicultorilor nr.17"
+
+#: .\templates\footer.html:12
+msgid "+40727318590"
+msgstr "+40727318590"
+
+#: .\templates\footer.html:13
+msgid "marianopinca@gmail.com"
+msgstr "marianopinca@gmail.com"
+
+#: .\templates\footer.html:19
+msgid "Linkuri rapide"
+msgstr "Linkuri rapide"
+
+#: .\templates\footer.html:21
+msgid "Despre noi"
+msgstr "Despre noi"
+
+#: .\templates\footer.html:22 .\templates\navbar.html:30
+msgid "Contact"
+msgstr "Contact"
+
+#: .\templates\footer.html:23
+msgid "Termeni & Condiții"
+msgstr "Termeni & Condiții"
+
+#: .\templates\footer.html:24
+msgid "Suport"
+msgstr "Suport"
+
+#: .\templates\footer.html:30
+msgid "&copy; 2024 Octavian Logistic.Toate drepturile rezervate."
+msgstr "&copy; 2024 Octavian Logistic.Toate drepturile rezervate."
+
+#: .\templates\index\index.html:18
+msgid "Bun venit la compania noastră de transport"
+msgstr "Bun venit la compania noastră de transport"
+
+#: .\templates\index\index.html:19
+msgid ""
+"Servicii de transport eficiente și de încredere pentru toate nevoile dvs. de "
+"transport."
+msgstr ""
+"Servicii de transport eficiente și de încredere pentru toate nevoile dvs. de "
+"transport."
+
+#: .\templates\index\index.html:20
+msgid ""
+"Contactați-ne astăzi pentru o ofertă sau pentru a afla mai multe despre "
+"serviciile noastre."
+msgstr ""
+"Contactați-ne astăzi pentru o ofertă sau pentru a afla mai multe despre "
+"serviciile noastre."
+
+#: .\templates\index\index.html:22
+msgid "Sunați-ne"
+msgstr "Sunați-ne"
+
+#: .\templates\index\index.html:23
+msgid "Trimiteți-ne un email"
+msgstr "Trimiteți-ne un email"
+
+#: .\templates\index\index.html:25
+msgid "WhatsApp"
+msgstr "WhatsApp"
+
+#: .\templates\index\index.html:34
+msgid "Octavian Logistic SRL"
+msgstr "Octavian Logistic SRL"
+
+#: .\templates\index\index.html:35
+msgid ""
+"Octavian Logistic SRL este o companie de logistică și transport fondată în "
+"2020, cu sediul în Brașov, România. Compania este înregistrată cu codul unic "
+"de identificare 43113348 și se specializează în servicii de transport și "
+"logistică, deservind clienți din diverse industrii."
+msgstr ""
+"Octavian Logistic SRL este o companie de logistică și transport fondată în "
+"2020, cu sediul în Brașov, România. Compania este înregistrată cu codul unic "
+"de identificare 43113348 și se specializează în servicii de transport și "
+"logistică, deservind clienți din diverse industrii."
+
+#: .\templates\index\index.html:36
+msgid ""
+"Compania noastră oferă soluții logistice flexibile și de încredere, cu un "
+"accent pe optimizarea lanțului de aprovizionare al partenerilor noștri."
+msgstr ""
+"Compania noastră oferă soluții logistice flexibile și de încredere, cu un "
+"accent pe optimizarea lanțului de aprovizionare al partenerilor noștri."
+
+#: .\templates\index\index.html:50
+msgid "Ani de experiență"
+msgstr "Ani de experiență"
+
+#: .\templates\index\index.html:54
+msgid "Kilometri parcurși"
+msgstr "Kilometri parcurși"
+
+#: .\templates\index\index.html:58 .\templates\navbar.html:27
+msgid "Clienti"
+msgstr "Clienti"
+
+#: .\templates\index\index.html:62
+#, fuzzy
+#| msgid "Contact"
+msgid "Contracte"
+msgstr "Contracte"
+
+#: .\templates\index\index.html:76
+msgid "Soluții rapide de transport și logistică"
+msgstr "Soluții rapide de transport și logistică"
+
+#: .\templates\index\index.html:77
+msgid ""
+"Oferim servicii rapide și eficiente de transport și logistică, adaptate "
+"nevoilor clienților dindiverse industrii. Ne concentrăm pe optimizarea "
+"lanțului de aprovizionare și pe livrări sigureși punctuale, asigurând "
+"soluții personalizate pentru fiecare proiect. Cu o echipă dedicată șiresurse "
+"moderne, suntem partenerul de încredere pentru toate cerințele logistice."
+msgstr ""
+"Oferim servicii rapide și eficiente de transport și logistică, adaptate "
+"nevoilor clienților dindiverse industrii. Ne concentrăm pe optimizarea "
+"lanțului de aprovizionare și pe livrări sigureși punctuale, asigurând "
+"soluții personalizate pentru fiecare proiect. Cu o echipă dedicată șiresurse "
+"moderne, suntem partenerul de încredere pentru toate cerințele logistice."
+
+#: .\templates\index\index.html:87
+msgid "Facilități de parcare"
+msgstr "Facilități de parcare"
+
+#: .\templates\index\index.html:88
+msgid ""
+"Octavian Logistic SRL nu doar că oferă servicii rapide și eficiente de "
+"transport și logistică, dar pune la dispoziție și facilități de parcare "
+"pentru camioane și tiruri."
+msgstr ""
+"Octavian Logistic SRL nu doar că oferă servicii rapide și eficiente de "
+"transport și logistică, dar pune la dispoziție și facilități de parcare "
+"pentru camioane și tiruri."
+
+#: .\templates\index\index.html:89
+msgid ""
+"Astfel, clienții noștri beneficiază de soluții complete care includ atât "
+"transportul în condiții optime, cât și un spațiu sigur și accesibil pentru "
+"staționarea vehiculelor de mare tonaj."
+msgstr ""
+"Astfel, clienții noștri beneficiază de soluții complete care includ atât "
+"transportul în condiții optime, cât și un spațiu sigur și accesibil pentru "
+"staționarea vehiculelor de mare tonaj."
+
+#: .\templates\index\index.html:94
+msgid "Locatie Live"
+msgstr "Locatie Live"
+
+#: .\templates\index\index.html:95
+msgid "Faceți clic pe acul roșu pentru a afla cum să ajungeți la parcare."
+msgstr "Faceți clic pe acul roșu pentru a afla cum să ajungeți la parcare."
+
+#: .\templates\index\index.html:125
+msgid "FLOTA"
+msgstr "FLOTA"
+
+#: .\templates\index\index.html:132
+msgid "Van"
+msgstr "Van"
+
+#: .\templates\navbar.html:18
+msgid "Acasa"
+msgstr "Acasa"
+
+#: .\templates\navbar.html:21
+msgid "Informatii"
+msgstr "Informatii"
+
+#~ msgid "Home"
+#~ msgstr "Home"
+
+#~ msgid "Despre Noi"
+#~ msgstr "Despre Noi"
